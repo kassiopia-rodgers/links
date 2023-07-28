@@ -5,43 +5,85 @@
     body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #004643;
+  background-color: #faeee7;
+  display: flex;
+  justify-content: center;
+}
+.banner {
+  display: flex;
+  justify-content: center;
 }
 .banner-image {
     width: 128px;
     height: 128px;
     object-fit: cover;
     border-radius: 128px;
+    display: flex;
+    justify-content: center;
   }
-    .thumbnail {
+.thumbnail {
   width: 48px;
   height: 48px;
   border-radius: 48px;
   object-fit: cover;
+  display: flex;
+  justify-content: center;
+
 }
 .name {
-  color: #fffffe;
+  color:#33272a;
+  font-family:Verdana;
+  font-size:30px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
-.social-icons a {
-  color: #fffffe;
-  text-decoration: none;v
+.headline {
+  color:#594a4e;
+  font-family:Verdana;
+  font-size:18px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.social-icons
+{
+  color:#33272a;
+  text-decoration: none;
+  font-family:Verdana;
+  font-size:15px;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
 }
 .link {
-  background-color: #f9bc60;
+  background-color: #ff8ba7;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .link a {
-  color: #001e1d;
+  color: #33272a;
   text-decoration: none;
+  font-family:Verdana;
+  font-size:15px;
+  text-align: center;
+  flex-grow:1;
+  padding: 5px;
 }
-  .items {
+.items {
   display: flex;
   flex-direction: column;
   gap: 30px;
   max-width: 640px;
+  flex-grow: 1;
+  font-family:Verdana;
+  font-size:15px;
 }
 </style>
 </head>
 <body>
+  <div class="items">
   <div class="banner">
     <img src="https://media.licdn.com/dms/image/C5603AQH87I548Tv2tQ/profile-displayphoto-shrink_800_800/0/1516501832734?e=1695859200&v=beta&t=ZzgW5X3LcFevFXP6A4BbqkqRtQUOfQLd6we-5T5iLJE" alt="Kassiopia Rodgers headshot" class="banner-image">
   </div>
@@ -49,6 +91,10 @@
   <div class="name">
     Kassiopia Rodgers
   </div>
+
+  <div class="headline">
+      I'm just a dog mom, wine lover, and world traveler learning how to code and navigate left turns in Chicago.
+      </div>
 
   <div class="social-icons">
     <a href="https://github.com/kassiopia-rodgers" target="_blank">
@@ -65,7 +111,7 @@
   </div>
 
   <div class="link">
-    <img class="thumbnail" src="https://res.cloudinary.com/the-infatuation/image/upload/c_fill,w_384,ar_4:3,g_center,f_auto/CHI_BarGoa_Interior_KimYeoh_PR_u7friv" alt="Interior Picture of Bar Goa in River North">
+    <img class="thumbnail" src="https://media.timeout.com/images/105619294/750/422/image.jpg" alt="Picture of Cocktail sign outside of a bar">
     <a target="_blank" href="https://www.theinfatuation.com/chicago/guides/the-best-happy-hours-in-chicago"> Best Happy Hours in Chicago - The Infatuation</a>
   </div>
 
@@ -81,6 +127,7 @@
 
     <a target="_blank" href="https://chicago.curbed.com/2019/12/5/20976351/chicago-architecture-guide/"> Chicago Architecture Guide - Curbed
     </a>
+  </div>
   </div>
 
   <!-- Etc, for as many links as you want -->
